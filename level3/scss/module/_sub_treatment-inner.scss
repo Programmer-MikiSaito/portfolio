@@ -1,0 +1,19 @@
+@use "../global" as *;
+
+.sub_treatment-inner{
+     width: 100%;
+     padding-right: rem(strip-unit($padding-pc));
+     padding-left: rem(strip-unit($padding-pc));
+     margin-right: auto;
+     margin-left: auto;
+     max-width: 1140px + strip-unit($padding-pc) * 2;
+     display: flex;
+     flex-direction: column;
+     @include mq('mds') {
+          padding-right: rem(strip-unit($padding-sp));
+          padding-left: rem(strip-unit($padding-sp));
+          margin-right: auto;
+          margin-left: auto;
+
+        }
+}

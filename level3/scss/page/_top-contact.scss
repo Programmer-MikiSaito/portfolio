@@ -1,0 +1,97 @@
+@use "../global" as *;
+
+.contact{
+  padding: 8rem 0;
+  @include mq('mds'){
+    padding:0;
+    margin-bottom: 34.8vw;
+    position: relative;
+    z-index: 5;
+    height: 193.33vw;
+  }
+}
+.contact::before{
+  @include mq('mds'){
+    content: "";
+    background-color: #EBF5FE;
+    z-index: 1;
+    position: absolute;
+    background-color: rgba(235,245,254,.6);
+    width: 193.33vw;
+    height: 193.33vw;
+    border-radius: 50%;
+    top:18%;
+    left: -50%;
+  }
+}
+.contact-inner{
+  position: relative;
+  height: 33vw;
+  min-height: 60rem;
+  display: flex;
+  text-align: center;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  @include mq('mds'){
+    height: 100%;
+    top: 2%;
+    z-index: 1;
+    flex-direction: column;
+  }
+}
+.contact-inner_img{
+  object-fit: cover;
+  object-position: 0 28%;
+  height: 100%;
+  @include mq('mds'){
+  aspect-ratio: 375 / 217;
+  object-position: initial;
+  height: 30%;
+  }
+}
+.contact-inner::before{
+  content: "";
+  width: inherit;
+  height: inherit;
+  min-height: inherit;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(255,255,255,.4);
+  @include mq('mds'){
+    z-index: 5;
+
+  }
+}
+.contact_container{
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  z-index: 5;
+  @include mq('mds'){
+    position: static;
+    margin-top: 60px;
+  }
+}
+.contact_text p{
+  font-size: .94vw;
+  line-height: calc(28 / 18);
+  margin-top: 7.8rem;
+  @include mq('mds'){
+    margin-top: 38px;
+    padding: 0 23px;
+    font-size: 4vw;
+    line-height: calc(21 / 14);
+  }
+}
+.contact_btn{
+  margin-top: 8rem;
+  @include mq('mds'){
+    margin-top: 63px;
+  }
+}
+.contact-btn{
+  background-color: $white;
+}

@@ -1,0 +1,8 @@
+@use "../global" as *;
+
+.treatment_pain{
+     margin-top: -1rem;
+     @include mq('mds'){
+          margin-top: 35px;
+     }
+}

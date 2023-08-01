@@ -1,0 +1,87 @@
+@use "../global" as *;
+
+.about_hospital{
+  padding-bottom:  12rem;
+  overflow: hidden;
+  @include mq('mds'){
+     margin-top: 0;
+     padding-bottom: 0;
+  }
+}
+.about_hospital-inner{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  z-index: 5;
+}
+.about_hospital-inner::before{
+     content: "";
+     background-color: #EBF5FE;
+     z-index: 1;
+     position: absolute;
+     width: 37.76vw;
+     max-width: 75rem;
+     min-width: 50rem;
+     height: 37.76vw;
+     max-height: 75rem;
+     min-height: 50rem;
+     border-radius:  50% ;
+     top: 60%;
+     left: 75%;
+     @include mq('mds'){
+       display: none;
+     }
+   }
+.about_hospital-title{
+  font-size: 1.57vw;
+  line-height: calc(45 / 35);
+  color: $bgray;
+  @include mq('mds'){
+    font-size:26px;
+    line-height: calc(32 / 26);
+    }
+}
+.hospital_container-text{
+  width: 52.6vw;
+  margin-top: 9rem;
+  @include mq('mds'){
+  margin-top: 28px;
+  padding: 0 10px;
+  width: 100%;
+  }
+}
+.hospital_container-text p{
+     font-size: 1.25vw;
+     line-height: calc(36 / 24);
+     @include mq('mds'){
+          font-size: 16px;
+          line-height: calc(24 / 16);
+     }
+}
+.hospital_container-img{
+     display: flex;
+     width: 100%;
+}
+.hospital_container-img p{
+     width: inherit;
+     display: grid;
+     position: relative;
+     z-index: 5;
+     margin-top: 9rem;
+     grid-template-columns: 1fr 1fr 1fr;
+     column-gap: 8.5rem;
+     row-gap: 6rem;
+     @include mq('mds'){
+          display: flex;
+          flex-direction: column;
+          row-gap: 15px;
+     }
+}
+.hospital_container-img p img{
+     aspect-ratio: 450 / 333;
+     object-fit: cover;
+     @include mq('mds'){
+          aspect-ratio: 335 / 248;
+     }
+}

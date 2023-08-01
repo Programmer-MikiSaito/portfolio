@@ -1,0 +1,15 @@
+@use "../global" as *;
+
+// SPのみ(767px以下)表示
+.u-mobile{
+  display: none;
+  @include mq('mds') {
+    display: block;
+  }
+}
+.u-mobile-flex{
+  display: none;
+  @include mq('mds') {
+    display: flex;
+  }
+}

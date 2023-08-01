@@ -1,0 +1,63 @@
+@use "../global" as *;
+
+.news_post-btn{
+     position: relative;
+     display: flex;
+     justify-content: center;
+     margin-top: 11rem;
+     @include mq('mds'){
+          margin-top: 190px;
+     }
+}
+.news_post-btn--btn{
+     position: absolute;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     @include mq('mds'){
+          gap: initial;
+     }
+}
+.news_post-btn--before,
+.news_post-btn--after{
+     font-size: 1.8rem;
+     line-height: calc(27 / 18);
+}
+.news_post-btn--b,
+.news_post-btn--a{
+     position: relative;
+     max-width: 31.5rem;
+     min-width: 24.74vw;
+     width: 16.4vw;
+     padding: 2.6rem 0;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     @include mq('mds'){
+          padding: 22px 0;
+          width: 145px;
+          min-width: initial;
+          max-width: initial;
+     }
+}
+.news_post-btn--b{
+     left: -80%;
+     @include mq('mds'){
+          left: -63%;
+          margin-top: 11%;
+     }
+}
+.news_post-btn--a{
+     left: 40.5%;
+     @include mq('mds'){
+          left: 65%;
+          top: 23%;
+     }
+}
+// 
+.news_post-btn--middle{
+     margin-left: -9rem;
+     @include mq('mds'){
+          margin-left: initial;
+     }
+}

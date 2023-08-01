@@ -1,0 +1,27 @@
+@use "../global" as *;
+
+.page-skip{
+  width: 100%;
+  max-width: $inner + strip-unit($padding-pc) * 2;
+  padding-right: rem(strip-unit($padding-pc));
+  padding-left: rem(strip-unit($padding-pc));
+  margin-right: auto;
+  margin-left: auto;
+  text-transform: uppercase;
+  font-size: .73vw;
+  line-height: calc(21 / 14);
+  color: $bgray;
+  transition: .5s;
+  margin-top: .7rem;
+  margin-left: 19rem;
+  @include mq('mds'){
+    padding-right: rem(strip-unit($padding-sp));
+    padding-left: rem(strip-unit($padding-sp));
+    margin-right: auto;
+    margin-left:10px;
+    font-size:14px;
+  }
+}
+.page-skip a:hover{
+  opacity: .5;
+}

@@ -1,0 +1,71 @@
+@use "../global" as *;
+
+.sub_treatment-img{
+     width: 39.58vw;
+     height: 21.875vw;
+     margin-left: auto;
+     margin-right: auto;
+     margin-top: 6.77vw;
+     @include mq('mds'){
+          margin-top: 45px;
+          width: 100%;
+          height: 45.1vw;
+     }
+}
+.sub_treatment-img p img{
+     aspect-ratio: 760 / 420;
+     object-fit: cover;
+     @include mq('mds'){
+          aspect-ratio: 335 / 160;
+     }
+}
+.sub_treatment-inner h2{
+     position: relative;
+     padding-left: 1rem;
+     margin-top: 8rem;
+     @include mq('mds'){
+          margin-top: 50px;
+          display: flex;
+          align-items: center;
+     }
+}
+.sub_treatment-inner span{
+     margin-left: 2rem;
+     font-size: 1.25vw;
+     line-height: 2.5;
+     @include mq('mds'){
+          font-size: 5.33vw;
+          line-height: calc(25 / 20);
+     }
+}
+.sub_treatment-inner h2::before{
+     content: "";
+     position: absolute;
+     margin-right: 1rem;
+     width: 6px;
+     height: 3.125vw;
+     background-color: $bgray;
+     @include mq('mds'){
+          height: 12.8vw;
+}
+}
+.sub_treatment-text{
+     margin-top: 6rem;
+
+     @include mq('mds'){
+          margin-top: 35px;
+          padding: 10px;
+     }
+}
+.sub_treatment-text p{
+     line-height: calc(24 / 16);
+     font-size: 16px;
+}
+.sub_treatment-btn{
+     margin-top: 14rem;
+     margin-bottom: 20rem;
+     @include mq('mds'){
+          margin-top: 120px;
+          margin-bottom: 100px;
+     }
+}

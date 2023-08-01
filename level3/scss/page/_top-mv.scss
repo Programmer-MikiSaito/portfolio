@@ -1,0 +1,108 @@
+@use "../global" as *;
+
+.mv{
+  margin-top: 7rem;
+  display:flex;
+  flex-direction: column;
+  align-items:flex-end;
+  @include mq('mds'){
+    margin-top: 1.5rem;
+  }
+}
+.mv-inner{
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+  padding-bottom: 2.5rem;
+  @include mq('mds'){
+    justify-content: center;
+    padding-bottom: 30px;
+  }
+}
+.mv-inner::before{
+  content: "";
+  position: absolute;
+  width: 37.76vw;
+  height: 37.76vw;
+  background-color: #EBF5FE;
+  border-radius: 50%;
+  left: -9%;
+  top: 45%;
+  @include mq('mds'){
+    width: 193.33vw;
+    height:193.33vw;
+    top: 25%;
+    left: -150%;
+
+  }
+}
+.mv_title{
+  width: 7.86vw;
+  height: 39.2vw;
+  margin-top: 11rem;
+  z-index: 20;
+  @include mq('mds'){
+    width: 27vw;
+    height: 134.7vw;
+    position: absolute;
+    margin-top: 26vw;
+    z-index: 20;
+  }
+}
+.mv_title{
+  aspect-ratio: 151 / 753;
+  object-fit: cover;
+}
+.mv_img{
+  width: 79.74vw;
+  height: 42.7vw;
+  margin-left: 3.67rem;
+  position: relative;
+  
+}
+.mv_img-slider{
+  aspect-ratio: 1531 / 820;
+  object-fit: cover;
+}
+.sp_img{
+  @include mq('mds'){
+  width: inherit;
+  height: 188vw;
+  position: relative;
+  }
+}
+.sp_img::before{
+  @include mq('mds'){
+  content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height:100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, .7);
+    z-index: 5;
+  }
+}
+.mv_img::after{
+  content: "";
+  display: flex;
+  position: absolute;
+  width: 78.125vw;
+  height: 1.56vw;
+  background-color: $bgray;
+  left: 1.61vw;
+}
+.sp_img::after{
+  @include mq('mds'){
+  content: "";
+  display: flex;
+  position: absolute;
+  width: 92vw;
+  height: 8vw;
+  background-color: $bgray;
+  top: 100%;
+  left: 8vw;
+  }
+}

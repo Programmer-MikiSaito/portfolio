@@ -1,0 +1,19 @@
+@use "../global" as *;
+
+$breakpoint-inner: $inner + $padding-pc * 2;
+
+html {
+  font-size: 62.5%;
+
+}
+main{
+  overflow-x: hidden;
+}
+
+// ホバー
+a {
+    transition: .5s;
+    &:hover {
+      opacity: 0.8;
+    }
+}

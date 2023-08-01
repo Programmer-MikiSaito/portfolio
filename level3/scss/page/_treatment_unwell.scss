@@ -1,0 +1,8 @@
+@use "../global" as *;
+
+.treatment_unwell{
+
+     @include mq('mds'){
+          margin-top: 30px;
+     }
+}

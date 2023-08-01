@@ -1,0 +1,74 @@
+@use "../global" as *;
+
+.section_btn{
+  display: flex;
+  text-align: center;
+  margin-top: 0;
+  @include mq('mds'){
+    margin-top: 0;
+  }
+}
+.btn{
+  display: flex;
+  width: 32rem;
+  font-size: 1.8rem;
+  line-height: calc(27 / 18);
+  padding: 29px 0;
+  border: 1px solid ;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+  align-items: center;
+  @include mq('lgs') {
+    width: 22rem;
+  }
+  @include mq('mds') {
+    width: 77.33vw;
+    max-width: 300px;
+    min-width: 150px;
+    font-size: 4.26vw;
+    padding: 28px 0;
+  }
+}
+.top-btn{
+  position: relative;
+}
+.top-btn::before{
+  content: "";
+  position: absolute;
+  max-width: 8rem;
+  width: 4.17vw;
+  height: 1rem;
+  border-bottom: 1px solid $gray;
+  border-right: 1px solid $gray;
+  transform: skew(45deg);
+  bottom: 50%;
+  left: 88%;
+  @include mq('mds'){
+    max-width: 58px;
+    width: 15.47vw;
+    left:  75%;
+    bottom: 45%;
+  }
+}
+.top-btn:hover::before{
+  transform: translateX(2rem) skew(45deg);
+}
+.top-btn:hover{
+  background-color: $bgray;
+  color: $white;
+}
+.subject-btn{
+  background-color: $bgray;
+  color: $white;
+  border: 1px solid $bgray;
+  @include mq('mds'){
+    border: 1px solid $gray;
+  }
+}
+.shadow{
+  box-shadow: .2rem .2rem .6rem rgba(0, 0, 0, 0.16);
+  @include mq('mds'){
+    box-shadow: none;
+  }
+}

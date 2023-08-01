@@ -1,0 +1,40 @@
+@use "../global" as *;
+
+.hamburger{
+  @include mq('mds'){
+  padding: 20px;
+  }
+}
+.hamburger span{
+  @include mq('mds'){
+  display: block;
+  width:2.6rem;
+  height:.2rem;
+  background-color: $bgray;
+  transition: .5s;
+  }
+}
+.hamburger span:nth-child(2){
+  @include mq('mds'){
+  margin: .6rem 0;
+  }
+}
+
+// open
+.hamburger.open span:nth-child(1){
+  @include mq('mds'){
+  transform:translate(3px, -1px) rotate(45deg);
+  transform-origin: left;
+  }
+}
+.hamburger.open span:nth-child(2){
+  @include mq('mds'){
+  opacity: 0;
+  }
+}
+.hamburger.open span:nth-child(3){
+  @include mq('mds'){
+  transform:translate(3px, 1px) rotate(-45deg);
+  transform-origin: left;
+  }
+}

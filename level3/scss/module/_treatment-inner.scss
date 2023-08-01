@@ -1,0 +1,30 @@
+@use "../global" as *;
+
+.treatment-inner{
+     width: 100%;
+     padding-right: rem(strip-unit($padding-pc));
+     padding-left: rem(strip-unit($padding-pc));
+     margin-right: auto;
+     margin-left: auto;
+     max-width: 1320px + strip-unit($padding-pc) * 2;
+     padding-top: 12.8rem;
+     display: flex;
+     flex-direction: column;
+     @include mq('mds') {
+          padding-right: rem(strip-unit($padding-sp));
+          padding-left: rem(strip-unit($padding-sp));
+          margin-right: auto;
+          margin-left: auto;
+          padding-top: 45px;
+        }
+}
+.treatment-btn{
+     display: flex;
+     margin-left: auto;
+     margin-right: auto;
+     gap: 4.16vw;
+     @include mq('mds'){
+       flex-direction: column;
+       gap: 13px;
+     }
+   }

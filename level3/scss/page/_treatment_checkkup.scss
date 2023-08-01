@@ -1,0 +1,10 @@
+@use "../global" as *;
+
+.treatment_checkkup{
+     margin-top: 1rem;
+     margin-bottom: 19rem;
+     @include mq('mds'){
+          margin-top: 30px;
+          margin-bottom: 95px;
+     }
+}

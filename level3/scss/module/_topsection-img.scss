@@ -1,0 +1,30 @@
+@use "../global" as *;
+
+// img
+.section_img{
+  position: relative;
+  z-index: 10;
+  display: flex;
+  width: 50%;
+  @include mq('lgs'){
+    flex-direction: column;
+    width: 100%;
+  }
+  @include mq('mds'){
+
+  }
+}
+.section_img img{
+  aspect-ratio: 400 / 647;
+  width: 20.83vw;
+  min-width: 30rem;
+  object-fit: cover;
+  @include mq('lgs'){
+    aspect-ratio: 315 / 270;
+    width: 90vw;
+  }
+  @include mq('mds'){
+    width: 84vw;
+  }
+}
+

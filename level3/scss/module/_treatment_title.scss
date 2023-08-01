@@ -1,0 +1,40 @@
+@use "../global" as *;
+
+.treatment_title{
+  display: flex;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+  text-transform: capitalize;
+}
+.treatment_title img{
+  width: 7rem;
+  @include mq('mds'){
+    width: 60px;
+    height: 50px;
+  }
+}
+.title{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: .7rem;
+  font-size: 1.56vw;
+  line-height: calc(45 / 30);
+  @include mq('mds'){
+    font-size: 26px;
+    line-height: calc(32 / 26);
+
+  }
+}
+.treatment_title p{
+  margin-top: 3.5rem;
+  margin-left: -.5rem;
+  font-size: .84vw;
+  line-height: calc(24 / 16);
+  @include mq('mds'){
+    margin-top: 23px;
+    font-size: 16px;
+  }
+}

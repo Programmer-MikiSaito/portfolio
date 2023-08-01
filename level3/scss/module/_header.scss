@@ -1,0 +1,56 @@
+@use "../global" as *;
+
+header{
+  height: 10rem;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 30;
+  position: fixed;
+  background-color: $white;
+  box-shadow: 0 .2rem 1rem rgba(0,0,0,.16);
+  @include mq('mds'){
+    height: 6rem;
+  }
+}
+.header-inner{
+  height: inherit;
+  width: inherit;
+  display: flex;
+  justify-content: space-between;
+  padding: .5rem 6rem;
+  @include mq('mds'){
+    padding:0;
+  }
+}
+.header-img{
+  width: 21vw;
+  max-width: 41rem;
+  display: flex;
+  align-items: center;
+  @include mq('mds'){
+    width: 224px;
+    max-width: 230px;
+    margin-left: 20px;
+  }
+}
+.header-img img{
+  width: 100%;
+}
+.header_nav{
+  display: flex;
+  margin-right: .6rem;
+  @include mq('mds'){
+    position: fixed;
+    z-index: 1;
+    margin-right: 0;
+  }
+}
+.header__hamburger{
+  display: none;
+  @include mq('mds'){
+    position: relative;
+    z-index: 20;
+  }
+}

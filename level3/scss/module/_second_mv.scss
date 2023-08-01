@@ -1,0 +1,70 @@
+@use "../global" as *;
+
+.s_mv{
+    margin-top: 7rem;
+    @include mq('mds'){
+      margin-top: 1.5rem;
+    }
+  }
+  .s_mv-inner{
+    width: 100%;
+    display: flex;
+    position: relative;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    height: 15.7vw;
+    z-index: 1;
+    @include mq('mds'){
+      height: 58.67vw;
+    }
+  }
+  .s_mv-inner::before{
+    content: "";
+    width: inherit;
+    height: inherit;
+    min-height: inherit;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,.3);
+    z-index: 5;
+  @include mq('mds'){
+      
+  
+    }
+  }
+  
+  .s_mv-inner--img{
+    width: inherit;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+  .s_mv_container{
+    position: absolute;
+    z-index: 8;
+  }
+  .s-title{
+    color: $white;
+    text-transform: capitalize;
+    font-size: 4.17vw;
+    line-height: calc(120 / 80);
+    @include mq('mds'){
+      font-size: 60px;
+      line-height: calc(90 / 60);
+    }
+  
+  }
+  .s-title p{
+    font-size: 1.25vw;
+    line-height: calc(36 / 24);
+    @include mq('mds'){
+      font-size: 16px;
+      line-height: calc(24 / 16);
+    }
+  }
+  #scroll{
+    scroll-behavior: smooth;
+  }

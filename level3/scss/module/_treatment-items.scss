@@ -1,0 +1,63 @@
+@use "../global" as *;
+
+.treatment-items{
+     display: flex;
+     margin-top: 6rem;
+     margin-left: auto;
+     margin-right: auto;
+}
+.treatment-item{
+     display: flex;
+     gap: 3.125vw;
+     @include mq('mds'){
+          flex-direction: column;
+          gap: 36px;
+          margin-top: 36px;
+     }
+}
+.treatment-item li{
+     padding: 0 6rem;
+     transform: scale(1);
+     transition: .3s ease-in-out;
+     @include mq('mds'){
+          padding: 0 ;
+     }
+}
+.treatment-item li a{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+}
+.treatment-item li a:hover img{
+     transform: scale(1.2);
+}
+.treatment-item li a p{
+     display: block;
+     overflow: hidden;
+     line-height: 0;
+     width: 14.58vw;
+     border-radius: 50%;
+     @include mq('mds'){
+          width: initial;
+     }
+}
+.treatment-item li a p img{
+     width: 100%;
+     height: 14.58vw;
+     object-fit: cover;
+     border-radius: 50%;
+     @include mq('mds'){
+          width: 58.67vw;
+          height: 58.67vw;
+     }
+}
+.treatment-item li a h3{
+     font-size: 1.25vw;
+     line-height: calc(30 / 24);
+     margin-top: 2rem;
+     @include mq('mds'){
+          font-size: 16px;
+          line-height: calc(24 / 16);
+          margin-top: 15px;
+     }
+}

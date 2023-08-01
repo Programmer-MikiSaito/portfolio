@@ -1,0 +1,47 @@
+.pagination{
+     margin: 0;
+     display: flex;
+     justify-content: center;
+
+
+  }
+  .pnavi{
+     display: flex;
+     gap: 1.3rem;
+
+  }
+  .pnavi a,
+  .pnavi span{
+   transition: .7s;
+  }
+  .pnavi a:hover,
+  .pnavi span:hover{
+   opacity: .5;
+  }
+  .nav-links{
+     display:flex;
+  }
+  .pagination .page-numbers{
+     display:inline-block;
+     padding:1em 1.5rem;
+     color: #707070;
+     border-radius:4px;
+     background:#fff;
+     border: 1px solid #707070;
+  }
+  .pagination .current{
+     padding:1em 1.5rem;
+     background:#4C6A84;
+     color:#fff;
+  }
+  .pagination .prev,
+  .pagination .next{
+     background:transparent;
+     box-shadow:none;
+     color:#707070;
+     border: initial;
+  }
+  .pagination .dots{
+     background:transparent;
+     box-shadow:none;
+  }
