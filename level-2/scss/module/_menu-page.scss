@@ -1,0 +1,50 @@
+@use "../global" as *;
+
+.menu-page{
+  padding: 4rem 0;
+  @include mq(mds){
+    padding: 19px 0 0;
+  }
+
+}
+.menu-items__conteiner{
+  display:flex;
+  justify-content: space-between;
+  margin-top: 4rem;
+  margin-left: 9.52vw;
+  @include mq(xl){
+    margin-left: 13rem;
+  }
+  @include mq(mds){
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 19px;
+    gap: 5.27vw;
+    width: 70%;
+  }
+  @media (max-width: 271px){
+    width: 100%;
+    padding: 0 2.4vw;
+  }
+}
+.menu-items{
+  width: 26.5%;
+  display: flex;
+  flex-direction: column;
+  gap: 2.93vw;
+  @include mq(mds){
+    gap:5.27vw;
+    width: 100%;
+  }
+}
+
+.menu__item-text{
+  width: 100%;
+  display:inline-flex;
+  justify-content: space-between;
+}
+
+.menu__item-text dd{
+  text-align: end;
+}

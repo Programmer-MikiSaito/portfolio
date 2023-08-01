@@ -1,0 +1,72 @@
+@use "../global" as *;
+
+.onedish__card{
+  display: flex;
+  @include mq(mds){
+    flex-direction: column;
+  }
+}
+.onedish__card-container{
+  display: flex;
+  
+  @include mq(mds){
+    flex-direction: column-reverse;
+  }
+}
+.onedish__card-items{
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  font-weight: $regular;
+  justify-content: space-between;
+  @include mq(mds){
+    width: 100%;
+    
+  }
+}
+.onedish__card-title{
+  writing-mode: vertical-rl;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap:9rem;
+  margin-top: 0.5rem;
+  font-size: 2.5rem;
+  line-height: calc(33 / 24);
+  letter-spacing: .08em;
+  @include mq(mds){
+    gap: initial;
+    justify-content: flex-start;
+    margin: 30px 0 28px;
+    font-size: 27px;
+    gap: 25px;
+    margin-right: 17px;
+    line-height: calc(38 / 27);
+  }
+}
+.onedish__card-text{
+  background-color: $black;
+  color: $white;
+  padding: 1.3rem 2rem;
+  font-size: 1.6rem;
+  line-height: calc(36 / 16);
+  @include mq(mds){
+    margin-left: calc(50% - 50vw);
+    margin-right: calc(50% - 50vw);
+    font-size: 16px;
+    padding: 15px 15px;
+    line-height: calc(33 / 15);
+  }
+}
+.onedish__card-img{
+  width: 50%;
+  @include mq(mds){
+    width: 100%;
+  }
+}
+.onedish__card-img img{
+  aspect-ratio: 540 / 393;
+  @include mq(mds){
+    aspect-ratio: 345 / 251;
+  }
+}

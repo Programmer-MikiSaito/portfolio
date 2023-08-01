@@ -1,0 +1,39 @@
+@use "../global" as *;
+
+.topmenu{
+  padding: 10rem 0 5rem;
+  @include mq(mds){
+    padding: 40px 0 20px;
+  }
+}
+.topmenu__item-container{
+  margin-top: 4.4rem;
+  @include mq(mds){
+    margin-top: 20px;
+    
+  }
+}
+
+.topmenu__item{
+  width: 100%;
+  display: flex;
+  @include mq(mds){
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+  }
+}
+.topmenu__img{
+  width: 100%;
+  margin: 0 2rem;
+  @include mq(mds){
+    width: 100%;
+    margin: 0 2.5px;
+  }
+}
+.topmenu__img img{
+  aspect-ratio: 240/ 240;
+  object-fit: cover;
+  @include mq(mds){
+    aspect-ratio: 160 / 125;
+  }
+}

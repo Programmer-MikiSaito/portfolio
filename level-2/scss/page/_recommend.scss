@@ -1,0 +1,16 @@
+@use "../global" as *;
+
+.recommend{
+  padding: 10rem 0;
+  background: url(../img/brown-bg.png)
+  no-repeat center / cover;
+  @include mq(mds){
+  padding: 40px 0;
+  }
+}
+.recommend-inner{
+  margin-top: 4.5rem;
+  @include mq(mds){
+    margin-top: 20px;
+  }
+}

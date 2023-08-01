@@ -1,0 +1,15 @@
+@use "../global" as *;
+
+.menu__title{
+  font-size: 10rem;
+  line-height: calc(144 / 100);
+  font-weight: $medium;
+  text-transform: capitalize;
+  @include mq(mds){
+    font-size: 48px;
+    line-height: calc(69 / 48);
+  }
+}
+.menu__title span{
+  color: #91855F;
+}

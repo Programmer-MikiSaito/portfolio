@@ -1,0 +1,53 @@
+@use "../global" as *;
+
+.logo-open{
+  @include mq(mds){
+    display: none;
+  } 
+}
+.logo-top.open{
+  @include mq(mds){
+    display: none;
+  }
+}
+.logo-open.open{
+  @include mq(mds){
+    display: block;
+    transition: .5s;
+  }
+}
+.logo-open.open:hover{
+  opacity: .7;
+}
+.hamburger__img{
+  @include mq(mds){
+    display: flex;
+    width: 13.33vw;
+    margin-right: 7px;
+    transition: .5s;
+  }
+}
+.hamburger__img:hover{
+  opacity: .7;
+}
+.hamburger__img.open{
+  @include mq(mds){
+    display: none;
+  }
+}
+.hamburger__open{
+  @include mq(mds){
+  display: none;
+  }
+}
+.hamburger__open.open{
+  @include mq(mds){
+    display:block;
+    width:13.33vw;
+    margin-right: 7px;
+    transition: .5s;
+  }
+}
+.hamburger__open.open:hover{
+  opacity: .7;
+}

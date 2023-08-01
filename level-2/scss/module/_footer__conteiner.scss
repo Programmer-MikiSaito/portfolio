@@ -1,0 +1,71 @@
+@use "../global" as *;
+
+.footer__conteiner{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 66.18vw;
+  @include mq(mds){
+    width: 100%;
+    justify-content: initial;
+    }
+}
+.footer__conteiner-access{
+  display: flex;
+  align-items: center;
+  @include mq(mds){
+    flex-direction: column;
+    align-items: initial;
+  }
+}
+.footer__conteiner-text{
+  font-size: 1.6rem;
+  line-height: calc(23 / 16);
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 50%;
+  @include mq(mds){
+    font-size: 16px;
+    gap: 19.5px;
+    width: 100%;
+  }
+}
+.access-text{
+  display: flex;
+  width: 39rem;
+  @include mq(mds){
+    width: 100%;
+  }
+}
+.access-text dt{
+  width: calc(64 / 390 * 100%);
+  @include mq(mds){
+    width: calc(64 / 310 * 100%);
+  }
+}
+.access-text dd{
+  margin-left: 3.8rem;
+  @include mq(mds){
+    margin-left: 30px;
+  }
+}
+.footer__conteiner-map{
+  width: 50%;
+  margin-left: 15rem;
+  @include mq(mds){
+    width: 100%;
+    margin-left: 0;
+    margin-top: 40px;
+  }
+}
+.footer__conteiner-map iframe{
+  width: 100%;
+  aspect-ratio: 360 / 261;
+  height: 100%;
+  @include mq(mds){
+    width: 100%;
+    aspect-ratio: 345 / 190;
+    max-width: 400px;
+  }
+}

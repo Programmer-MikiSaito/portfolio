@@ -1,0 +1,36 @@
+@use "../global" as *;
+
+.section-title{
+  text-align: center;
+  @include mq(mds){
+    display: initial;
+    margin-left: 15px;
+  }
+}
+.section-title__text{
+  display: inline-block;
+  font-size: 4rem;
+  line-height: calc(57 / 40);
+  padding: 1rem .7rem;
+  border: 1px solid #91855F;
+  margin-left: 0 ;
+  margin-right: 0;
+  position: relative;
+  @include mq(mds){
+    font-size: 24px;
+    line-height: calc(35 / 24);
+    padding: 7px 9px 6px 8px;
+    margin-left: -2px;
+  }
+}
+.section-title__text::before{
+  content: "";
+  position: absolute;
+  display: block;
+  border: 1px solid #91855F;
+  padding: inherit;
+  top: 3px;
+  left: 3px;
+  right: -5px;
+  bottom: -3px;
+}

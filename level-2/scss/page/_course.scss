@@ -1,0 +1,11 @@
+@use "../global" as *;
+
+.course__caution{
+  margin-top: 5rem;
+  display: flex;
+  justify-content: flex-end;
+}
+.course__caution p{
+  font-size: 1.4rem;
+  line-height: calc(20 / 14);
+}

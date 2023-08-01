@@ -1,0 +1,19 @@
+@use "../global" as *;
+
+.menu-items{
+  font-size: 1.17vw;
+  line-height: calc(23 / 16);
+  font-weight: $medium;
+  text-transform: capitalize;
+  @include mq(xl){
+    font-size: 1.6rem;
+  }
+  @include mq(mds){
+    font-size: 3.73vw;
+    line-height: calc(20 / 14);
+  }
+  @media (max-width: 375px){
+    font-size: 2.4vw;
+  }
+
+}

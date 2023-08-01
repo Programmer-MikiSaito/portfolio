@@ -1,0 +1,57 @@
+@use "../global" as *;
+
+.contact{
+
+  @include mq(mds){
+    
+  }
+}
+.mv__contact{
+  height: 51.24vw;
+  background: url(../img/contact-fv.jpg)
+  no-repeat center / cover;
+  display: flex;
+  flex-direction: column;
+  padding-top: 35rem;
+  margin-bottom: -4rem;
+  position: relative;
+  @include mq(mds){
+    background: url(../img/img_recommend.jpg)
+    no-repeat center / cover;
+    background-position: 75%;
+    padding-top: 131px;
+    height: 165.5vw;
+    margin-bottom: -80px;
+  }
+}
+.mv__contact-inner{
+  display: flex;
+  @include mq(mds){
+    justify-content: flex-end;
+  }
+}
+.mv__contact-title{
+  font-size: 4rem;
+  line-height: calc(57 / 40);
+  color: $white;
+  font-weight: $regular;
+  z-index: 2;
+  margin-left: 3rem;
+  @include mq(mds){
+    font-size: 32px;
+    line-height: calc(46 / 32);
+    margin-left: 0;
+    margin-right: 2px;
+  }
+}
+.mv__contact::before{
+  content: "";
+  display: block;
+  height: inherit;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}

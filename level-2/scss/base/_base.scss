@@ -1,0 +1,33 @@
+@use "../global" as *;
+
+$breakpoint-inner: $inner + $padding-pc * 2;
+
+html {
+  // ~375px
+  // @media (max-width: 375px) {
+  //   font-size: vw(375, 16);
+  // }
+
+  // 375px~787px
+  font-size: 62.5%;
+
+  // 768px~inner
+  @include mq("md") {
+    font-size: 62.5%;
+  }
+
+  // inner~max-screen
+  @media (min-width: $breakpoint-inner) {
+    font-size: 62.5%;
+  }
+}
+
+// ホバー
+a {
+  @include mq("md") {
+    transition: .3s;
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+}

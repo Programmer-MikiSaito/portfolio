@@ -1,0 +1,59 @@
+@use "../global" as *;
+
+.recommend__card-container{
+  display: flex;
+  @include mq(mds){
+    flex-direction: column;
+  }
+}
+.recommend__card-img{
+  width: 40.7%;
+  z-index: 5;
+  @include mq(mds){
+    width: 87%;
+  }
+}
+.recommend__card-img img{
+  width: 100%;
+  aspect-ratio: 440 / 320;
+  object-fit: cover;
+  @include mq(mds){
+    aspect-ratio: 300 / 218;
+  }
+}
+.recommend__card-texts{
+  width: 64%;
+  z-index: 1;
+  background-color: $black;
+  color: $white;
+  margin-top: 10.4rem;
+  margin-left: -5rem;
+  padding: 4rem 7.5rem 5rem;
+  @include mq(mds){
+    width: 91%;
+    margin-top: 20px;
+    margin-left: 9%;
+    padding: 20px 13px ;
+  }
+}
+.recommend__card-title{
+  font-size: 2.4rem;
+  line-height: calc(35 / 24);
+  display: flex;
+  justify-content: center;
+  @include mq(mds){
+    font-size: 24px;
+}
+}
+.recommend__card-text{
+  font-size: 1.6rem;
+  line-height: calc(36 / 16);
+  margin-top: 3.3rem;
+  @include mq(mds){
+    padding: 0 2px;
+    margin-top: 20px;
+    font-size: 16px;
+    margin-top: 20px;
+    line-height: calc(22.5 / 16);
+  }
+}

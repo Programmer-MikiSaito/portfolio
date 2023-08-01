@@ -1,0 +1,8 @@
+@use "../global" as *;
+
+.menu__footer{
+  margin-top: 10rem;
+  @include mq(mds){
+    margin-top: 40px;
+  }
+}

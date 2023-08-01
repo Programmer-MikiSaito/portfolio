@@ -1,0 +1,16 @@
+@use "../global" as *;
+
+.owner{
+  background: url(../img/white-bg.png)
+  no-repeat center / cover;
+  padding: 10rem 0 12.9rem;
+  @include mq(mds){
+    padding: 40px 0 0 0 ;
+  }
+}
+.owner-inner{
+  margin-top: 4.4rem;
+  @include mq(mds){
+    margin-top: 20px;
+  }
+}

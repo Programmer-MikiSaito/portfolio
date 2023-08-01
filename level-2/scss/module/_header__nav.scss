@@ -1,0 +1,91 @@
+@use "../global" as *;
+
+.header__nav{
+  width: 100%;
+  justify-content: flex-end;
+}
+.header__nav-img{
+  display: none;
+
+}
+.header__nav-img.open{
+  @include mq(mds){
+    display: flex;
+    height: 100%;
+  }
+}
+.header__nav.open{
+  @include mq(mds){
+    background-size: cover;
+    will-change: contents;
+    z-index: 15;
+    display: flex;
+    overflow: hidden;
+    color: $white;
+    }
+}
+.header__nav-items{
+  display: flex;
+  gap: 5rem;
+  justify-content: flex-end;
+  @include mq(mds){
+    flex-direction: column;
+    margin-top: -62vw;
+    margin-left: 50%;
+    gap: initial;
+    z-index: 20;
+  }
+}
+.header__nav-item:nth-child(n+2){
+  @include mq(mds){
+    margin-top: 11.2vw;
+  }
+}
+.header__nav-item:last-child{
+  @include mq(mds){
+    margin-bottom: 11.73vw;
+  }
+}
+.header__nav-item{
+  font-size: 1.76vw;
+  line-height: calc(35 / 24);
+  position: relative;
+  flex-shrink: 1;
+  display: inline-flex;
+  transition: .5s;
+  @include mq(mds){
+    font-size:6.4vw;
+    color: $white;
+    
+  }
+}
+.header__nav-item:hover{
+  opacity: .7;
+}
+.header__nav-item a{
+  @include mq(mds){
+  display: inline-block;
+  position: relative;
+  text-decoration: none;
+  }
+}
+
+.header__nav-item a:hover{
+  opacity: 1;
+}
+.header__nav-item a:hover::before{
+  transform: scale(1,1);
+}
+.header__nav-item a::before{
+  content: "";
+  width: 100%;
+  height: .1rem;
+  background-color: #707070;
+  position: absolute;
+  transform: scale(0,1);
+  transition: .5s;
+  margin-top: 5rem;
+  @include mq(mds){
+    margin-top: 35px;
+  }
+}

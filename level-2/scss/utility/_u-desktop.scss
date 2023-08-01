@@ -1,0 +1,9 @@
+@use "../global" as *;
+
+//PCのみ(768px以上)表示
+.u-desktop {
+  @include mq(mds) {
+    display: none;
+  }
+}
+

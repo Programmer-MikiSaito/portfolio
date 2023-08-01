@@ -1,0 +1,72 @@
+@use "../global" as *;
+
+.mv__menu{
+  background-color: $black;
+  color: #91855F;
+  text-transform: uppercase;
+  padding: 9.5rem 0 0;
+  @include mq(mds){
+    padding: 120px 0 0;
+    margin-bottom: -20px;
+  }
+}
+.mv__menu-inner{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  
+  @include mq(mds){
+    flex-direction: column;
+    align-items: flex-end;
+  }
+}
+.mv__menu-img{
+  width: 55%;
+  @include mq(mds){
+    width: 93%;
+    margin-right: calc(50% - 50vw);
+    margin-top: 62px;
+  }
+}
+.mv__menu-img img{
+  aspect-ratio: 602 / 565;
+  object-fit: cover;
+}
+.mv__menu-title{
+  font-size: 4rem;
+  line-height: calc(57 / 40);
+  margin-right: 20.7rem;
+  @include mq(mds){
+    font-size: 40px;
+    margin-right:0;
+  }
+}
+
+.menu__item-container{
+  margin-top: 4rem;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+  @include mq(mds){
+    margin-top: 80px;
+    
+  }
+}
+.menu__item{
+  width: 100%;
+  display: flex;
+}
+.menu__img{
+  width: 100%;
+  margin: 0 ;
+  @include mq(mds){
+    width: 100%;
+    margin: 0 ;
+  }
+}
+.menu__img img{
+  aspect-ratio: 330/ 240;
+  object-fit: cover;
+  @include mq(mds){
+    aspect-ratio: 180 / 131;
+  }
+}

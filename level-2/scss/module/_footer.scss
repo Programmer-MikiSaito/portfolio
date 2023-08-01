@@ -1,0 +1,32 @@
+@use "../global" as *;
+
+.footer{
+  background-color: $black;
+  
+}
+.footer-inner{
+  padding: 4rem 0 10rem;
+  color: $gray;
+  display: flex;
+  flex-direction: column;
+  @include mq(mds){
+    padding: 20px 0 70px;
+    display: block;
+  }
+}
+.footer-logo{
+  width: 22rem;
+  @include mq(mds){
+    width: 130px;
+  }
+}
+.footer__conteiner{
+  margin-top: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+  @include mq(mds){
+    margin-top: 20px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}

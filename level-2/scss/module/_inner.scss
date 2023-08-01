@@ -1,0 +1,16 @@
+@use "../global" as *;
+
+.inner {
+  width: 100%;
+  padding-right: 2.5rem;
+  padding-left: 2.5rem;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: $inner ;
+  @include mq('mds') {
+    max-width: initial;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin: 0 ;
+  }
+}

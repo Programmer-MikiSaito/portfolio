@@ -1,0 +1,19 @@
+@use "../global" as *;
+
+.commeitments{
+  background: url(../img/white-bg.png)
+  no-repeat center / cover;
+  padding: 7.5rem 0 10rem;
+  @include mq(mds){
+    padding: 40px 0 0 0;
+  }
+}
+.commeitments div{
+  
+}
+.commeitments-inner{
+  margin-top: 4.5rem;
+  @include mq(mds){
+    margin-top: 21px;
+  }
+}
